@@ -1,5 +1,5 @@
 
-import { useHistory } from 'react-router-dom'
+import { Redirect, useHistory } from 'react-router-dom'
 import React, { useEffect } from 'react';
 
 
@@ -8,22 +8,22 @@ export const Listado = () => {
 
     const history = useHistory();
 
+    const token = localStorage.getItem('token');
     
-    useEffect(() => {
-        const token = localStorage.getItem('token');
+    // useEffect(() => {
 
-        console.log(token);
-        if(token === null){
-            history.push('/');
-        }
-    
-    },[])
+    //   localStorage.getItem('token');
+   
+    // },[])
     
 
  
 
 
   return (
-    <h2>Hola soy el componente Listado</h2>
+    <>
+      {!token && <Redirect to={'/'}/>}
+      <h1>Componente listado</h1>
+    </>
   )
 }

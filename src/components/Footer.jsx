@@ -1,17 +1,15 @@
-import { Link } from "react-router-dom"
-
+import { Link } from "react-router-dom";
+import "../css/footer.css";
 
 export const Footer = () => {
   return (
-    <footer>
-        <nav>
-            <ul>
-                <li>
-                    <a href="http://instagram.com" rel="noopener noreferer">IG</a>
-                </li>
-            </ul>
-        </nav>
-        <p>Copyright alkemy challenge</p>
+    <footer className="footerXD bg-dark text-light  p-3">
+      <a
+        target={"_blank"}
+        href="https://www.instagram.com/nicoofuentes04/"
+        rel="noopener noreferer" className="ul1">
+        IG</a>
+      <p>Copyright alkemy challenge</p>
     </footer>
-  )
-}
+  );
+};

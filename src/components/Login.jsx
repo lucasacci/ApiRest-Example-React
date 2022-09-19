@@ -1,7 +1,10 @@
 import axios from "axios";
 import Swal from 'sweetalert2'
 import withReactContent from 'sweetalert2-react-content'
-import { useHistory } from 'react-router-dom'
+import { Redirect, useHistory } from 'react-router-dom'
+import { Header } from "./Header";
+
+import '../css/style.css'
 
 const MySwal = withReactContent(Swal)
 
@@ -59,24 +62,29 @@ function Login(){
 
   }
 
+  const token = localStorage.getItem('token');
+
   return(
     <>
-      <h2>Formulario</h2>
-      <form onSubmit={submitHandler}>
-          <label>
-            <span>Correo electronico</span>
+    {token && <Redirect to={'/listado'}/>}
+      <h2 className="text-center">Formulario</h2>
+      <div className="d-flex justify-content-center cardXD">
+        <form onSubmit={submitHandler}>
+            <label>
+              <span>Correo electronico</span>
+              <br />
+              <input type="email" className="widthInput" name="email"/>
+            </label>
             <br />
-            <input type="email" name="email"/>
-          </label>
-          <br />
-          <label>
-            <span>Contraseña</span>
+            <label>
+              <span>Contraseña</span>
+              <br />
+              <input type="password" className="widthInput" name="password"/>
+            </label>
             <br />
-            <input type="password" name="password"/>
-          </label>
-          <br />
-          <button type="submit">Ingresar</button>
-      </form>
+            <button type="submit" className="my-2 btn btn-success ">Ingresar</button>
+        </form>
+      </div>
     </>
   )
 }
