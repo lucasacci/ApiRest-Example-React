@@ -6,7 +6,7 @@ import { Header } from "./Header";
 
 import '../css/style.css'
 
-const MySwal = withReactContent(Swal)
+const MySwal = withReactContent(Swal);
 
 
 function Login(){

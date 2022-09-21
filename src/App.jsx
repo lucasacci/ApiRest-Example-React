@@ -7,6 +7,7 @@ import { Header } from './components/Header'
 import { Footer } from './components/Footer'
 
 import './css/bootstrap.min.css'
+import { Detalle } from './components/Detalle'
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
       <Switch>
           <Route exact path="/" component={Login}/>
           <Route path="/listado" component={Listado}/>
+          <Route path="/detalle" component={Detalle}/>
       </Switch>
     </div>
       <Footer/>
