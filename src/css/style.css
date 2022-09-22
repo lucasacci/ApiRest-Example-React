@@ -3,12 +3,17 @@
 }
 
 .footerXD{
-    
+    position: relative;
     width: 100%;
-   
+    bottom: 0;
     display: flex;
     flex-flow: nowrap column;
     align-items: center;
+}
+
+.buscador{
+    flex-direction: row;
+    align-self: flex-start;
 }
 
 .ul1{
@@ -17,4 +22,9 @@
 
 .widthCard{
     width: 18rem;
+}
+
+body{
+    height: 100vh;
+    
 }

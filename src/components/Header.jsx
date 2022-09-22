@@ -1,16 +1,15 @@
 
 import { Link } from 'react-router-dom'
 import '../css/bootstrap.min.css'
+import Buscador from './Buscador'
 
 export const Header = () => {
   return (
     <header >
-        <nav className="navbar-expand-sm bg-dark p-4"> 
-            <ul className="navbar-nav mb-2 mb-lg-0  d-flex justify-content-between ">
-                <div className='d-flex '>
+        <nav className="navbar-expand-sm bg-dark p-4 d-flex justify-content-between"> 
+            <ul className="navbar-nav mb-2 mb-lg-0  ">
                 <Link to={'/'} className=""><img src="https://cdn.worldvectorlogo.com/logos/react-1.svg" width={'80 px'} alt="react logo" /></Link>
-                </div>
-                <div className='d-flex align-items-center '>
+                <div className='d-flex align-items-center mx-5'>
                     <li className="nav-item ">
                         <Link to="/" className='text-light text-decoration-none '>Home</Link>
                     </li>
@@ -22,6 +21,7 @@ export const Header = () => {
                     </li>
                 </div>
             </ul>
+                <Buscador/>
         </nav>
     </header> 
   )
