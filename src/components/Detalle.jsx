@@ -18,7 +18,7 @@ export const Detalle = () => {
 
   useEffect(() => {
 
-    const endPoint =`https://api.themoviedb.org/3/movie/${movieID}?api_key=11755de5998dedd3454bfd4d09aeccc6&language=en-US`;
+    const endPoint =`https://api.themoviedb.org/3/movie/${movieID}?api_key=11755de5998dedd3454bfd4d09aeccc6&language=es-ES`;
 
 
     axios.get(endPoint)

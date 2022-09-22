@@ -8,10 +8,10 @@ import { Footer } from './components/Footer'
 
 import './css/bootstrap.min.css'
 import { Detalle } from './components/Detalle'
+import { Resultados } from './components/Resultados'
 
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
@@ -21,6 +21,7 @@ function App() {
           <Route exact path="/" component={Login}/>
           <Route path="/listado" component={Listado}/>
           <Route path="/detalle" component={Detalle}/>
+          <Route path="/resultados" component={Resultados}/>
       </Switch>
     </div>
       <Footer/>

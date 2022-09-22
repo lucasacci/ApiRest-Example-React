@@ -22,7 +22,7 @@ export const Listado = () => {
     
     useEffect(() => {
 
-      const endPoint = 'https://api.themoviedb.org/3/discover/movie?api_key=11755de5998dedd3454bfd4d09aeccc6&language=en-US&page=1';
+      const endPoint = 'https://api.themoviedb.org/3/discover/movie?api_key=11755de5998dedd3454bfd4d09aeccc6&language=es-ES&page=1';
    
       axios.get(endPoint)
       .then(response =>{
