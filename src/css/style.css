@@ -3,9 +3,9 @@
 }
 
 .footerXD{
-    bottom: 0;
+    
     width: 100%;
-    position: fixed;
+   
     display: flex;
     flex-flow: nowrap column;
     align-items: center;

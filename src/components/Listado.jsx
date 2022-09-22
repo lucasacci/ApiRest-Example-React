@@ -18,7 +18,7 @@ export const Listado = () => {
 
     const [movielist, setMovielist] = useState([])
 
-    const token = localStorage.getItem('token');
+    const token = sessionStorage.getItem('token');
     
     useEffect(() => {
 

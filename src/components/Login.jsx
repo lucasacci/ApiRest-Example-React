@@ -56,13 +56,13 @@ function Login(){
         )
 
         const token = res.data.token;
-        localStorage.setItem('token', token);
+        sessionStorage.setItem('token', token);
         history.push('/listado');
       })
 
   }
 
-  const token = localStorage.getItem('token');
+  const token = sessionStorage.getItem('token');
 
   return(
     <>
