@@ -12,7 +12,7 @@ import '../css/style.css'
 const MySwal = withReactContent(Swal)
 
 
-export const Listado = () => {
+export const Listado = (props) => {
 
     const history = useHistory();
 
@@ -37,7 +37,7 @@ export const Listado = () => {
 
     },[setMovielist])
     
-    console.log(movielist)
+  
  
 
 
@@ -53,6 +53,7 @@ export const Listado = () => {
           return (  
           <div className="card widthCard col-12 col-md-4 col-lg-3 mx-3 my-4" key={index} >
             <img src={'https://image.tmdb.org/t/p/w500/'+ movie.poster_path} className="card-img-top" />
+            <button className='favourite-btn' onClick={props.addOrRemove} data-movie-id={movie.id}>❤️</button>
             <div className="card-body">
               <h5 className="card-title">{movie.title}</h5>
               <p className="card-text">{movie.overview.substring(0,100)+ `...`}</p>
