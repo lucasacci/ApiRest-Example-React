@@ -42,3 +42,7 @@ body{
     border: none;
     top: 10px;
 }
+
+ul div li:hover{
+    text-decoration: underline;
+}

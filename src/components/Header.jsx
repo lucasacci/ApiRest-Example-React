@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import '../css/bootstrap.min.css'
 import Buscador from './Buscador'
 
-export const Header = () => {
+export const Header = (props) => {
   return (
     <header >
         <nav className="navbar-expand-sm bg-dark p-4 d-flex justify-content-between"> 
@@ -18,6 +18,9 @@ export const Header = () => {
                     </li>
                     <li className="nav-item">
                         <Link to="/contacto" className='text-light text-decoration-none'>Contacto</Link>
+                    </li>
+                    <li className="nav-item mx-3">
+                        <Link to="/favoritos" className='text-light text-decoration-none'>Favoritos</Link>
                     </li>
                 </div>
             </ul>
