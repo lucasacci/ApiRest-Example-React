@@ -17,9 +17,6 @@ export const Header = (props) => {
                         <Link to="/listado" className='text-light text-decoration-none'>Listado</Link>
                     </li>
                     <li className="nav-item">
-                        <Link to="/contacto" className='text-light text-decoration-none'>Contacto</Link>
-                    </li>
-                    <li className="nav-item mx-3">
                         <Link to="/favoritos" className='text-light text-decoration-none'>Favoritos</Link>
                     </li>
                 </div>

@@ -46,7 +46,7 @@ function Login(){
     
 
     axios
-      .post('https://challenge-react.alkemy.org',{ email, password })
+      .post('http://challenge-react.alkemy.org',{ email, password })
       .then(res => {
         
         Swal.fire(
