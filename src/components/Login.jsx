@@ -73,13 +73,13 @@ function Login(){
             <label>
               <span>Correo electronico</span>
               <br />
-              <input type="email" className="widthInput" name="email"/>
+              <input type="email" className="widthInput" name="email" placeholder="type: challenge@alkemy.org"/>
             </label>
             <br />
             <label>
               <span>Contraseña</span>
               <br />
-              <input type="password" className="widthInput" name="password"/>
+              <input type="password" className="widthInput" name="password" placeholder="type: react"/>
             </label>
             <br />
             <button type="submit" className="my-2 btn btn-success ">Ingresar</button>
